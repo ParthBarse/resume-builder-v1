@@ -20,7 +20,7 @@ useEffect(()=>{
   const getAllResumes = async() => {
     const res = await axios({
       method : "get",
-      url : "http://localhost:5000/getAllResumes",
+      url : "http://20.197.17.85:5000/getAllResumes",
     })
     if(res.data.success === true){
       setStudents(res.data.resumes)
@@ -83,10 +83,10 @@ useEffect(()=>{
                       {student.email}
                   </Td>
                   <Td>
-                  <img src="http://localhost:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
+                  <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
                   </Td>
                   <Td>
-                  <img src="http://localhost:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
+                  <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
                   </Td>
                   <Td>
                       <button >View More</button>
@@ -103,7 +103,7 @@ useEffect(()=>{
                   <Td >
                       {student.post_graduate !== undefined && student.post_graduate.length > 0 && student.post_graduate.map((ele, index)=>{
                           console.log("post", ele);
-                        return <a href={`http://localhost:5000/public/657301450afd17735c0f117e/post_graduation_marksheet_${index+1}.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
+                        return <a href={`http://20.197.17.85:5000/public/657301450afd17735c0f117e/post_graduation_marksheet_${index+1}.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
                           View and Download
                         </a>
                       })}
@@ -111,23 +111,23 @@ useEffect(()=>{
                   <Td>
                       {student.under_graduate !== undefined && student.under_graduate.length > 0 && student.under_graduate.map((ele, index)=>{
                         console.log("under", ele);
-                        return <a href={`http://localhost:5000/public/657301450afd17735c0f117e/under_graduation_marksheet_${index+1}.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
+                        return <a href={`http://20.197.17.85:5000/public/657301450afd17735c0f117e/under_graduation_marksheet_${index+1}.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
                           View and Download
                         </a>
                       })}
                   </Td>
                   <Td>
-                   <a href={`http://localhost:5000/public/657301450afd17735c0f117e/twelweth_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
+                   <a href={`http://20.197.17.85:5000/public/657301450afd17735c0f117e/twelweth_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
                           View and Download
                         </a>
                   </Td>
                   <Td>
-                  <a href={`http://localhost:5000/public/657301450afd17735c0f117e/tenth_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
+                  <a href={`http://20.197.17.85:5000/public/657301450afd17735c0f117e/tenth_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
                           View and Download
                         </a>
                   </Td>
                   <Td>
-                  <a href={`http://localhost:5000/public/657301450afd17735c0f117e/eleventh_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
+                  <a href={`http://20.197.17.85:5000/public/657301450afd17735c0f117e/eleventh_marksheet.pdf`} target="_blank" rel="noopener noreferrer" color="#00b0ff">
                           View and Download
                         </a>
                   </Td>

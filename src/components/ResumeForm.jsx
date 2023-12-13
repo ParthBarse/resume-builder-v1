@@ -325,14 +325,14 @@ const ResumeForm = () => {
 
   return (
     <Stack mb="50px">
-      <button
+      {page==4?(<button
         style={{
           backgroundColor: "black",
           padding: "2px",
           color: "white"
         }}
         onClick={sendData}
-      >Save and Submit</button>
+      >Save and Submit</button>):''}
 
       {/* <a href="http://20.197.17.85:5000/public/657301450afd17735c0f117e/candidate.png" target="_blank" rel="noopener noreferrer">asdfsf</a> */}
       <Center

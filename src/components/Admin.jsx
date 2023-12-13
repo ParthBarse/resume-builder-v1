@@ -83,10 +83,10 @@ useEffect(()=>{
                       {student.email}
                   </Td>
                   <Td>
-                  <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
+                  {/* <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" /> */}
                   </Td>
                   <Td>
-                  <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" />
+                  {/* <img src="http://20.197.17.85:5000/public/657301450afd17735c0f117e/passport.png" alt="student" /> */}
                   </Td>
                   <Td>
                       <button >View More</button>

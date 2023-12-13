@@ -197,7 +197,7 @@ const ResumeForm = () => {
     
     const res1 = await axios({
       method : "post",
-      url : `http://localhost:5000/createResume`,
+      url : `http://20.197.17.85:5000/createResume`,
       data : {
           "given_name" : firstname,
           "sur_name" : lastname,
@@ -250,7 +250,7 @@ const ResumeForm = () => {
 
       const res = await axios({
         method : "post",
-        url : `http://localhost:5000/addFiles`,
+        url : `http://20.197.17.85:5000/addFiles`,
         data : formData
       })
       console.log(res);
@@ -333,7 +333,7 @@ const ResumeForm = () => {
       onClick={sendData}
       >Press b krlo ab</button>
       
-      <a href="http://localhost:5000/public/657301450afd17735c0f117e/candidate.png" target="_blank" rel="noopener noreferrer">asdfsf</a>
+      <a href="http://20.197.17.85:5000/public/657301450afd17735c0f117e/candidate.png" target="_blank" rel="noopener noreferrer">asdfsf</a>
       <Center
         style={{ display: page === 5 ? "none" : "flex" }}
         w="100%"

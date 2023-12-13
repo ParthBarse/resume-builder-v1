@@ -659,7 +659,7 @@ const PersonalDetails = (props) => {
                 type="file"
                 onChange={(e)=>{
                   // handleFileChange()
-                  handleInput(`under_graduation_marksheet_${resumeInfo.edu.under_graduate[i].year_no}`, `http://localhost:5000/public/657301450afd17735c0f117e/under_graduation_marksheet_${resumeInfo.edu.under_graduate[i].year_no}`, i);
+                  handleInput(`under_graduation_marksheet_${resumeInfo.edu.under_graduate[i].year_no}`, `http://20.197.17.85:5000/public/657301450afd17735c0f117e/under_graduation_marksheet_${resumeInfo.edu.under_graduate[i].year_no}`, i);
                   const updateValue = {
                     ...resumeInfo.files,
                     [`under_graduation_marksheet_${resumeInfo.edu.under_graduate[i].year_no}`] : e.target.files[0],
